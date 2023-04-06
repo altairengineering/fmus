@@ -1,0 +1,1 @@
+The FMU contains a periodic clocks.
