@@ -1,1 +1,0 @@
-The FMU contains a periodic clock and four triggered input clocks.
