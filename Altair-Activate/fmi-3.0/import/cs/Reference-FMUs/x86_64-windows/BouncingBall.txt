@@ -1,0 +1,2 @@
+The FMU link: https://github.com/modelica/Reference-FMUs/tree/main/BouncingBall
+Result: OK
