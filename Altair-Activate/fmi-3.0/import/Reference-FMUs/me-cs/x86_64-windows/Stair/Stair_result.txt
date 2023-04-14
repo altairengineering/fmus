@@ -1,0 +1,3 @@
+The FMU link: https://github.com/modelica/Reference-FMUs/tree/main/Stair
+Result-ME: OK
+Result-CS: OK
