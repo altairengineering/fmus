@@ -3,9 +3,6 @@ FMUs exported by Altair products. This FMU can be accessed and cross-checked by 
 The uploaded FMUs are free to be shared for cross-check purposes.
 Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altair.com)
 **********************************************************************************************************
-<!-- Markdown approach -->
-![](https://github.com/altairengineering/fmus/blob/master/icon_Activate.png | width=100)
-
 <!-- HTML approach -->
 <img src="https://github.com/altairengineering/fmus/blob/master/icon_Activate.png"  width="250"/>
 ********************************************************************************************
