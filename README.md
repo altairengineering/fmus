@@ -4,7 +4,10 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altair.com)
 **********************************************************************************************************
 <!-- Markdown approach -->
-![](https://github.com/altairengineering/fmus/blob/master/icon_Activate.png =250x250)
+![](https://github.com/altairengineering/fmus/blob/master/icon_Activate.png | width=100)
+
+<!-- HTML approach -->
+<img src="https://github.com/altairengineering/fmus/blob/master/icon_Activate.png"  width="250"/>
 ********************************************************************************************
 Compatibility information:
 These FMUs hve been tested successfully in Altair-Activate. 
