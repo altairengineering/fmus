@@ -1,7 +1,7 @@
 <!-- HTML approach -->
 <img src="https://github.com/altairengineering/fmus/blob/master/icon_Activate.png"  width="250"/>
 
-# fmus
+# Altair-Activate
 FMUs exported by Altair products. This FMU can be accessed and cross-checked by other tool vendors supporting FMI.
 The uploaded FMUs are free to be shared for cross-check purposes.
 Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altair.com)
@@ -12,35 +12,29 @@ Compatibility information:
 
 These FMUs hve been tested successfully in Altair-Activate. 
 
-#Exporting tool:  [Reference-FMUs] (https://github.com/modelica/Reference-FMUs)
+# Exporting tool:  [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
 
-[BouncingBall] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/BouncingBall)
-
-Platform: Windows64
-
-FMU kind: CS, ME
-
-
-[Dahlquist] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Dahlquist)
-
-Platform: Windows64
-
-FMU kind: CS, ME
-
-[LinearTransform] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/LinearTransform)
-
-Platform: Windows64
-
-FMU kind: CS, ME
-
-[Resource] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Resource)
+[BouncingBall](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/BouncingBall)
 Platform: Windows64
 FMU kind: CS, ME
 
-[Stair] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Stair)
+
+[Dahlquist](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Dahlquist)
 Platform: Windows64
 FMU kind: CS, ME
 
-[VanDerPol] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/VanDerPol)
+[LinearTransform](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/LinearTransform)
+Platform: Windows64
+FMU kind: CS, ME
+
+[Resource](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Resource)
+Platform: Windows64
+FMU kind: CS, ME
+
+[Stair](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/Stair)
+Platform: Windows64
+FMU kind: CS, ME
+
+[VanDerPol](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/fmi-3.0/import/Reference-FMUs/me-cs/x86_64-windows/VanDerPol)
 Platform: Windows64
 FMU kind: CS, ME
