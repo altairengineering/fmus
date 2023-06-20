@@ -1,0 +1,1 @@
+The model contains a periodic clock.

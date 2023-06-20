@@ -13,26 +13,68 @@ Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altai
 
 *******************************************************************************************
 
-# Compatibility information:
+# Compatibility information (Export):
+##3.0
+### [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me)
+### [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs)
 
-These FMUs hve been tested successfully in Altair-Activate. 
+##3.0
+### [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me)
+### [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs)
+
+
+# Compatibility information (Import):
+
+These FMUs have been tested successfully in Altair-Activate. 
 
 ## Exporting tool:  [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
 
+### 3.0
 [BouncingBall]()
 Win64: CS, ME
+Linux64: CS, ME
 
 [Dahlquist]()
 Win64: CS, ME
+Linux64: CS, ME
 
 [LinearTransform]()
 Win64: CS, ME
+Linux64: CS, ME
 
 [Resource]()
 Win64: CS, ME
+Linux64: CS, ME
 
 [Stair]()
 Win64: CS, ME
+Linux64: CS, ME
 
 [VanDerPol]()
 Win64: CS, ME
+Linux64: CS, ME
+
+### 2.0
+[BouncingBall]()
+Win64: CS, ME
+Linux64: CS, ME
+
+[Dahlquist]()
+Win64: CS, ME
+Linux64: CS, ME
+
+[LinearTransform]()
+Win64: CS, ME
+Linux64: CS, ME
+
+[Resource]()
+Win64: CS, ME
+Linux64: CS, ME
+
+[Stair]()
+Win64: CS, ME
+Linux64: CS, ME
+
+[VanDerPol]()
+Win64: CS, ME
+Linux64: CS, ME
