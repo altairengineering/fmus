@@ -40,7 +40,6 @@ These FMUs have been tested successfully in Altair-Activate.
 | Stair | ME, CS | ME, CS |
 | VanDerPol | ME, CS | ME, CS |
 
-### FMI-2.0
 
 | FMU-2.0 | **win64** | **linux64** |
 | --- | --- | --- |
