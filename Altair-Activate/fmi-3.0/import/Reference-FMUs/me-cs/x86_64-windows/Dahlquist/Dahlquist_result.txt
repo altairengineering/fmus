@@ -1,3 +1,0 @@
-The FMU link: https://github.com/modelica/Reference-FMUs/tree/main/Dahlquist
-Result-ME: OK
-Result-CS: OK
