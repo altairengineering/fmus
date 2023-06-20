@@ -27,11 +27,11 @@ Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altai
 
 These FMUs have been tested successfully in Altair-Activate. 
 
-## Exporting tool:  [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
+## Exporting tool:  
 
-### FMI-3.0
+### [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
 
-| FMU | **x86_64-windows** | **x86_64-linux** |
+| FMI-3.0 | **x86_64-windows** | **x86_64-linux** |
 | --- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
@@ -42,7 +42,7 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ### FMI-2.0
 
-| FMU | **win64** | **linux64** |
+| FMU-2.0 | **win64** | **linux64** |
 | --- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
