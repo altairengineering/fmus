@@ -30,27 +30,27 @@ These FMUs have been tested successfully in Altair-Activate.
 ## Exporting tool:  [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
 
 ### FMI-3.0
-[BouncingBall]() x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[BouncingBall]() **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-[Dahlquist]() x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[Dahlquist]() **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-[LinearTransform]() x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[LinearTransform]() **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-[Resource]() x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[Resource]() **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-[Stair]()  x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[Stair]()  **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-[VanDerPol]() x86_64-windows: CS, ME    x86_64-linux: CS, ME
+[VanDerPol]() **x86_64-windows**: CS, ME    **x86_64-linux**: CS, ME
 
-### 2.0
-[BouncingBall]() win64: CS, ME    linux64: CS, ME
+### FMI-2.0
+[BouncingBall]() **win64**: CS, ME    **linux64**: CS, ME
 
-[Dahlquist]() win64: CS, ME    linux64: CS, ME
+[Dahlquist]() **win64**: CS, ME    **linux64**: CS, ME
 
-[LinearTransform]() win64: CS, ME    linux64: CS, ME
+[LinearTransform]() **win64**: CS, ME    **linux64**: CS, ME
 
-[Resource]() win64: CS, ME    linux64: CS, ME
+[Resource]() **win64**: CS, ME    **linux64**: CS, ME
 
-[Stair]() win64: CS, ME    linux64: CS, ME
+[Stair]() **win64**: CS, ME    **linux64**: CS, ME
 
-[VanDerPol]() win64: CS, ME    linux64: CS, ME
+[VanDerPol]() **win64**: CS, ME    **linux64**: CS, ME
