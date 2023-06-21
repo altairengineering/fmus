@@ -31,8 +31,8 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ### [Reference-FMUs](https://github.com/modelica/Reference-FMUs)
 
-| FMI-3.0 | **x86_64-windows** | **x86_64-linux** |
-| --- | --- | --- |
+| **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
+| :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
 | LinearTransform | ME, CS | ME, CS |
@@ -41,11 +41,35 @@ These FMUs have been tested successfully in Altair-Activate.
 | VanDerPol | ME, CS | ME, CS |
 
 
-| FMU-2.0 | **win64** | **linux64** |
-| --- | --- | --- |
+| **FMU-2.0** | **win64** | **linux64** |
+| :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
 | LinearTransform | ME, CS | ME, CS |
 | Resource | ME, CS | ME, CS |
 | Stair | ME, CS | ME, CS |
 | VanDerPol | ME, CS | ME, CS |
+
+
+### [Dymola](https://github.com/modelica/Reference-FMUs)
+
+| **FMU-2.0** | **win64** | **linux64** |
+| :--- | --- | --- |
+| BouncingBall | ME, CS | ME, CS |
+| Dahlquist | ME, CS | ME, CS |
+| LinearTransform | ME, CS | ME, CS |
+| Resource | ME, CS | ME, CS |
+| Stair | ME, CS | ME, CS |
+| VanDerPol | ME, CS | ME, CS |
+
+### [Maplesim](https://github.com/modelica/Reference-FMUs)
+
+| **FMU-2.0** | **win64** | **linux64** |
+| :--- | --- | --- |
+| BouncingBall | ME, CS | ME, CS |
+| Dahlquist | ME, CS | ME, CS |
+| LinearTransform | ME, CS | ME, CS |
+| Resource | ME, CS | ME, CS |
+| Stair | ME, CS | ME, CS |
+| VanDerPol | ME, CS | ME, CS |
+
