@@ -41,7 +41,7 @@ These FMUs have been tested successfully in Altair-Activate.
 | VanDerPol | ME, CS | ME, CS |
 
 
-| **FMU-2.0** | **win64** | **linux64** |
+| **FMI-2.0** | **win64** | **linux64** |
 | :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
@@ -53,7 +53,7 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ### [Dymola (2019FD01)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/Dymola)
 
-| **FMU-2.0** | **win64** | 
+| **FMI-2.0** | **win64** | 
 | :--- | --- |
 | BooleanNetwork1 | ME, CS |
 | ControlledTemperature | ME, CS |
@@ -64,7 +64,7 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ### [Maplesim (2021.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/MapleSim)
 
-| **FMU-2.0** | **win64** | **linux64** |
+| **FMI-2.0** | **win64** | **linux64** |
 | :--- | --- | --- |
 | ControlledTemperature | ME, CS | ME, CS |
 | CoupledClutches | ME, CS | ME, CS |
@@ -72,7 +72,7 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ### [DS_FMU_Export_from_Simulink (2.1.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/DS_FMU_Export_from_Simulink)
 
-| **FMU-2.0** | **win64** |
+| **FMI-2.0** | **win64** |
 | :--- | --- |
 | BouncingBalls_sf | ME, CS |
 | TestModel1_sf | ME, CS |
