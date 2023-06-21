@@ -54,7 +54,7 @@ These FMUs have been tested successfully in Altair-Activate.
 ### [Dymola-2019FD01](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/Dymola)
 
 | **FMU-2.0** | **win64** | 
-| :--- | --- | --- |
+| :--- | --- |
 | BooleanNetwork1 | ME, CS |
 | ControlledTemperature | ME, CS |
 | CoupledClutches | ME, CS |
@@ -73,7 +73,7 @@ These FMUs have been tested successfully in Altair-Activate.
 ### [DS_FMU_Export_from_Simulink-2.1.2](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/DS_FMU_Export_from_Simulink)
 
 | **FMU-2.0** | **win64** |
-| :--- | --- | --- |
+| :--- | --- |
 | BouncingBalls_sf | ME, CS |
 | TestModel1_sf | ME, CS |
 | TestModel2_sf | ME, CS |
