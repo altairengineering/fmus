@@ -20,6 +20,17 @@ Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altai
 ### [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me)
 ### [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs)
 
+ 
+
+ | **FMI-3.0** | **x86_64-windows** | 
+| :--- | --- |  
+| periodic_clock | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me/x86_64-windows/periodic_clock), [CS] (https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs/x86_64-windows/periodic_clock) | 
+| sinewave_array | ME, CS |  
+| triggered_and_periodic_clock | ME, CS |  
+ 
+
+ 
+
 </details>
 
 <details>
