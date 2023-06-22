@@ -68,10 +68,21 @@ These FMUs have been tested successfully in Altair-Activate.
 | :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
-| LinearTransform | ME, CS | ME, CS |
+| Feedthrough | ME, CS | ME, CS |
 | Resource | ME, CS | ME, CS |
 | Stair | ME, CS | ME, CS |
 | VanDerPol | ME, CS | ME, CS |
+
+
+| **FMI-1.0** | **win64** | **linux64** |
+| :--- | --- | --- |
+| BouncingBall | CS |  CS |
+| Dahlquist | ME, CS | ME, CS |
+| Feedthrough | ME, CS | ME, CS |
+| Resource |  CS |  CS |
+| Stair | ME, CS | ME, CS |
+| VanDerPol | ME, CS | ME, CS |
+
 
 </details>
 
