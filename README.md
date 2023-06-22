@@ -29,9 +29,10 @@ These FMUs have been tested successfully in Altair-Activate.
 
 ## Exporting tool:  
 
-### [Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
+<details>
+<summary> ### [Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)</summary>
 
-| **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
+ | **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
 | :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
 | Dahlquist | ME, CS | ME, CS |
@@ -49,6 +50,10 @@ These FMUs have been tested successfully in Altair-Activate.
 | Resource | ME, CS | ME, CS |
 | Stair | ME, CS | ME, CS |
 | VanDerPol | ME, CS | ME, CS |
+
+
+</details>
+
 
 
 ### [Dymola (2019FD01)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/Dymola)
