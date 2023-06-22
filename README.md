@@ -13,8 +13,8 @@ Please report any failure, report an issue or send your comments or suggestions 
 
 *******************************************************************************************
 
-# Compatibility information (FMU Exported by Altair-Activate):
-[Altair-Activate](https://altair.com/activate)
+# Compatibility information (Exported by [Altair-Activate](https://altair.com/activate)):
+
 
 <details>
 <summary> FMI-3.0 </summary>
