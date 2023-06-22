@@ -30,9 +30,9 @@ These FMUs have been tested successfully in Altair-Activate.
 ## Exporting tool:  
 
 <details>
-<summary> Reference-FMUs </summary>
+<summary> **Reference-FMUs** </summary>
 
-[Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
+###[Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
  | **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
 | :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
@@ -52,10 +52,11 @@ These FMUs have been tested successfully in Altair-Activate.
 | Stair | ME, CS | ME, CS |
 | VanDerPol | ME, CS | ME, CS |
 
-
 </details>
 
 
+<details>
+<summary> **Dymola** </summary>
 
 ### [Dymola (2019FD01)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/Dymola)
 
@@ -68,6 +69,11 @@ These FMUs have been tested successfully in Altair-Activate.
 | IntegerNetwork1 | ME, CS |
 | Rectifier | ME, CS |
 
+</details>
+
+<details>
+<summary> **Maplesim** </summary>
+
 ### [Maplesim (2021.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/MapleSim)
 
 | **FMI-2.0** | **win64** | **linux64** |
@@ -75,7 +81,10 @@ These FMUs have been tested successfully in Altair-Activate.
 | ControlledTemperature | ME, CS | ME, CS |
 | CoupledClutches | ME, CS | ME, CS |
 | Rectifier | ME, CS | ME, CS |
+</details>
 
+<details>
+<summary> **DS_FMU_Export_from_Simulink** </summary>
 ### [DS_FMU_Export_from_Simulink (2.1.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/DS_FMU_Export_from_Simulink)
 
 | **FMI-2.0** | **win64** |
@@ -84,4 +93,4 @@ These FMUs have been tested successfully in Altair-Activate.
 | TestModel1_sf | ME, CS |
 | TestModel2_sf | ME, CS |
 | TriggeredSubsystems_sf | ME, CS |
-
+</details>
