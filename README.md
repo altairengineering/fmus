@@ -28,11 +28,10 @@ Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altai
 <details>
 <summary> FMI-2.0 </summary>
  
-
- | **FMI-3.0** | **win64** |  **linux64** | 
+ | **FMI-2.0** | **win64** |  **linux64** | 
 | :--- | --- | --- |
 | engine1a | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/engine1a) |  |
-| sinewave_array | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/vanderpol)  |  |
+| vanderpol | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/vanderpol)  |  |
  
 
 </details>
