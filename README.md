@@ -32,7 +32,7 @@ These FMUs have been tested successfully in Altair-Activate.
 <details>
 <summary> Reference-FMUs </summary>
 
-###[Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
+### [Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
  | **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
 | :--- | --- | --- |
 | BouncingBall | ME, CS | ME, CS |
@@ -84,6 +84,7 @@ These FMUs have been tested successfully in Altair-Activate.
 
 <details>
 <summary> DS_FMU_Export_from_Simulink </summary>
+
 ### [DS_FMU_Export_from_Simulink (2.1.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/DS_FMU_Export_from_Simulink)
 
 | **FMI-2.0** | **win64** |
