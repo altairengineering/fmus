@@ -9,11 +9,13 @@ A free academic version of Activate can be downloaded at [Activate student editi
 
 *******************************************************************************************
 
-Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altair.com)
+Please report any failure, report an issue or send your comments or suggestions to Masoud Najafi (masoud@altair.com)
 
 *******************************************************************************************
 
 # Compatibility information (FMU Exported by Altair-Activate):
+[Altair-Activate](https://altair.com/activate)
+
 <details>
 <summary> FMI-3.0 </summary>
 
