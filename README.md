@@ -13,15 +13,22 @@ Please report any failure, comment or suggestion to: Masoud Najafi (masoud@altai
 
 *******************************************************************************************
 
-# Compatibility information (Export):
-## FMI-3.0
+# Compatibility information (FMU Exported by Altair-Activate):
+<details>
+<summary> FMI-3.0 </summary>
+
 ### [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me)
 ### [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs)
 
-## FMI-2.0
+</details>
+
+<details>
+<summary> FMI-2.0 </summary>
+
 ### [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me)
 ### [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs)
 
+</details>
 
 # Compatibility information (Import):
 
