@@ -30,8 +30,7 @@ These FMUs have been tested successfully in Altair-Activate.
 ## Exporting tool:  
 
 <details>
-<summary> **Reference-FMUs** </summary>
-
+<summary> Reference-FMUs </summary>
 ###[Reference-FMUs (v0.0.23)](https://github.com/modelica/Reference-FMUs)
  | **FMI-3.0** | **x86_64-windows** | **x86_64-linux** |
 | :--- | --- | --- |
@@ -53,11 +52,8 @@ These FMUs have been tested successfully in Altair-Activate.
 | VanDerPol | ME, CS | ME, CS |
 
 </details>
-
-
 <details>
-<summary> **Dymola** </summary>
-
+<summary> Dymola </summary>
 ### [Dymola (2019FD01)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/Dymola)
 
 | **FMI-2.0** | **win64** | 
@@ -70,10 +66,8 @@ These FMUs have been tested successfully in Altair-Activate.
 | Rectifier | ME, CS |
 
 </details>
-
 <details>
-<summary> **Maplesim** </summary>
-
+<summary> Maplesim </summary>
 ### [Maplesim (2021.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/MapleSim)
 
 | **FMI-2.0** | **win64** | **linux64** |
@@ -82,11 +76,9 @@ These FMUs have been tested successfully in Altair-Activate.
 | CoupledClutches | ME, CS | ME, CS |
 | Rectifier | ME, CS | ME, CS |
 </details>
-
 <details>
-<summary> **DS_FMU_Export_from_Simulink** </summary>
+<summary> DS_FMU_Export_from_Simulink </summary>
 ### [DS_FMU_Export_from_Simulink (2.1.2)](https://github.com/modelica/fmi-cross-check/tree/master/fmus/2.0/cs/win64/DS_FMU_Export_from_Simulink)
-
 | **FMI-2.0** | **win64** |
 | :--- | --- |
 | BouncingBalls_sf | ME, CS |
