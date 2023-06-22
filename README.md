@@ -2,9 +2,9 @@
 <img src="https://github.com/altairengineering/fmus/blob/master/icon_Activate.png"  width="200"/>
 
 # [Altair-Activate](https://altair.com/activate)
-FMUs have been exported by Altair-Activate. This FMU can be accessed and cross-checked by other tool vendors supporting FMI.
-The uploaded FMUs are free to be shared for cross-check purposes.
-
+Altair Activate is an open and flexible integration platform for comprehensive system-of-systems simulation. 
+Based on a hybrid block diagram modeling environment for signal blocks, object oriented physical components, and electric and electronics systems, Altair Activate allows multiphysics analysis throughout the development cycle.
+The comprehensive support of math modeling, scripting and modeling languages, and tool-independent Functional Mock-up Interface (FMI) standard facilitate the re-use and integration of existing code within the same model. 
 A free academic version of Activate can be downloaded at [Activate student edition](https://altairuniversity.com/free-altair-student-edition/)
 
 *******************************************************************************************
@@ -14,7 +14,8 @@ Please report any failure, report an issue or send your comments or suggestions 
 *******************************************************************************************
 
 # Compatibility information (Exported by [Altair-Activate](https://altair.com/activate)):
-
+All FMUs have been exported by Altair-Activate and can be accessed and cross-checked by other tool vendors supporting FMI.
+The uploaded FMUs are free to be shared for cross-check purposes.
 
 <details>
 <summary> FMI-3.0 </summary>
