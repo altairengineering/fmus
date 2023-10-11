@@ -17,13 +17,6 @@ Please report any failure, report an issue or send your comments or suggestions 
 All FMUs have been exported by Altair  Activate and can be accessed and cross-checked by other tool vendors supporting FMI.
 The uploaded FMUs are free to be shared for cross-check purposes.
 
-## Validation Tools:  
-* [Altair  Activate](https://altair.com/activate)
-* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
-* [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
-* [FMPY](https://github.com/CATIA-Systems/FMPy) (only for FMI-2.0)
-* [FMUComplianceChecker](https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
----
 <details>
 <summary> FMI-3.0 </summary>
 
@@ -48,12 +41,16 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 | Boocwen | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/Boocwen)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/win64/Boocwen) |  [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/linux64/Boocwen)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/linux64/Boocwen) |
 | DiscreteController | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/DiscreteController)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/win64/DiscreteController) |  [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/linux64/DiscreteController)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/linux64/DiscreteController) |
 | Pendulum | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/win64/Pendulum)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/win64/Pendulum) |  [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/me/linux64/Pendulum)  , [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/2.0/export/cs/linux64/Pendulum) |
-  
-
+ 
 </details>
 
-***
-***
+## Validation Tools:  
+* [Altair  Activate](https://altair.com/activate)
+* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
+* [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
+* [FMPY](https://github.com/CATIA-Systems/FMPy) (only for FMI-2.0)
+* [FMUComplianceChecker](https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
+---
 # FMI Import Compatibility information:
 
 These FMUs have been tested successfully in Altair  Activate. 
