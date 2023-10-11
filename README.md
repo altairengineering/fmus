@@ -21,6 +21,7 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 * [Altair  Activate](https://altair.com/activate)
 * [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
 * [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
+* [FMPY](https://github.com/CATIA-Systems/FMPy) (only for FMI-2.0)
 * [FMUComplianceChecker](https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
 
 <details>
