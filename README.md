@@ -17,6 +17,12 @@ Please report any failure, report an issue or send your comments or suggestions 
 All FMUs have been exported by Altair  Activate and can be accessed and cross-checked by other tool vendors supporting FMI.
 The uploaded FMUs are free to be shared for cross-check purposes.
 
+## Validation Tools:  
+* [Altair  Activate](https://altair.com/activate)
+* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
+* [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
+* [FMUComplianceChecker](https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
+
 <details>
 <summary> FMI-3.0 </summary>
 
@@ -27,12 +33,6 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 | triggered_and_periodic_clock | [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me/x86_64-windows/triggered_and_periodic_clock), [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs/x86_64-windows/triggered_and_periodic_clock) |  [ME](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/me/x86_64-linux/periodic_clock), [CS](https://github.com/altairengineering/fmus/tree/master/Altair-Activate/3.0/export/cs/x86_64-linux/triggered_and_periodic_clock) |
  
 </details>
-
-## Validation Tools:  
-* [Altair  Activate](https://altair.com/activate)
-* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
-* [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
-* [FMUComplianceChecker]https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
 
 <details>
 <summary> FMI-2.0 </summary>
