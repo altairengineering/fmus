@@ -13,9 +13,15 @@ Please report any failure, report an issue or send your comments or suggestions 
 
 *******************************************************************************************
 
-# Compatibility information (Exported by [Altair  Activate](https://altair.com/activate)):
+# FMU Export Compatibility information (Exported by [Altair  Activate](https://altair.com/activate)):
 All FMUs have been exported by Altair  Activate and can be accessed and cross-checked by other tool vendors supporting FMI.
 The uploaded FMUs are free to be shared for cross-check purposes.
+
+## Validation Tools:  
+*[Altair  Activate](https://altair.com/activate)
+*[FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (FMI-3.0)
+*[Reference-FMUs](https://github.com/modelica/Reference-FMUs) (FMI-3.0)
+
 
 <details>
 <summary> FMI-3.0 </summary>
@@ -45,7 +51,7 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 
 </details>
 
-# Compatibility information (Import):
+# FMI Import Compatibility information:
 
 These FMUs have been tested successfully in Altair  Activate. 
 
