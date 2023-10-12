@@ -46,7 +46,8 @@ The uploaded FMUs are free to be shared for cross-check purposes.
 
 ## Validation Tools:  
 * [Altair  Activate](https://altair.com/activate)
-* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0)
+* [FMU Check](https://fmu-check.herokuapp.com/)
+* [FMI-VDM-Model](https://github.com/INTO-CPS-Association/FMI-VDM-Model) (only for FMI-3.0, Linux)
 * [Reference-FMUs](https://github.com/modelica/Reference-FMUs) (only for FMI-3.0)
 * [FMPY](https://github.com/CATIA-Systems/FMPy) (only for FMI-2.0)
 * [FMUComplianceChecker](https://github.com/modelica-tools/FMUComplianceChecker/releases) (only FMI-2.0)
