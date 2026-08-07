@@ -134,3 +134,9 @@ These FMUs have been tested successfully in Altair Twin Activate.
 | TestModel2_sf | ME, CS |
 | TriggeredSubsystems_sf | ME, CS |
 </details>
+
+## License
+
+Copyright 2026 Siemens Software.
+All rights reserved.
+The models and accompanying materials may only be used for testing and validation of FMI implementations.
