@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="triggered_and_periodic_clock">
-  <header formatversion="2" hwxversion="2022.3" script="oml"/>
+  <header formatversion="2" hwxversion="2026.1" script="oml"/>
   <edition>
     <properties>
       <property name="creator" value="masoud"/>
       <property name="creationdate" value="06/28/20 10:11:17"/>
       <property name="revision" value="0"/>
-      <property name="lastmodifieddate" value="04/06/23 10:42:16"/>
+      <property name="lastmodifieddate" value="08/11/26 16:17:51"/>
       <property name="comments" value=""/>
     </properties>
   </edition>
@@ -16,7 +16,7 @@
     <block name="triggered_and_periodic_clock" type="block">
       <diagram>
         <block name="Input" type="regular_in_port">
-          <template name="system/Ports/Input"/>
+          <template name="system/Ports/Input" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -67,7 +67,7 @@
           </parameters>
         </block>
         <block name="Output" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -117,7 +117,7 @@
           </parameters>
         </block>
         <block name="Integral" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -216,7 +216,7 @@
           </parameters>
         </block>
         <block name="Sum" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -305,7 +305,7 @@
           </parameters>
         </block>
         <block name="Gain_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -366,7 +366,7 @@
               </properties>
               <graphics>
                 <location position="top" x="0.5" y="0.2"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -381,7 +381,7 @@
           </parameters>
         </block>
         <block name="Sum_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -473,7 +473,7 @@
           </parameters>
         </block>
         <block name="SampleClock" type="block">
-          <template name="system/ActivationOperations/SampleClock"/>
+          <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -523,7 +523,7 @@
           </parameters>
         </block>
         <block name="DiscreteDelay" type="block">
-          <template name="system/Dynamical/DiscreteDelay"/>
+          <template name="system/Dynamical/DiscreteDelay" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -584,7 +584,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -599,7 +599,7 @@
           </parameters>
         </block>
         <block name="Block_1" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -685,7 +685,7 @@
           </parameters>
         </block>
         <block name="EventInput" type="activation_in_port">
-          <template name="system/Ports/EventInput"/>
+          <template name="system/Ports/EventInput" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -733,7 +733,7 @@
           </parameters>
         </block>
         <block name="EventInput_1" type="activation_in_port">
-          <template name="system/Ports/EventInput"/>
+          <template name="system/Ports/EventInput" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -781,7 +781,7 @@
           </parameters>
         </block>
         <block name="SampleClock_1" type="block">
-          <template name="system/ActivationOperations/SampleClock"/>
+          <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -831,7 +831,7 @@
           </parameters>
         </block>
         <block name="DiscreteDelay_1" type="block">
-          <template name="system/Dynamical/DiscreteDelay"/>
+          <template name="system/Dynamical/DiscreteDelay" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -892,7 +892,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -907,7 +907,7 @@
           </parameters>
         </block>
         <block name="Split" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -993,7 +993,7 @@
           </parameters>
         </block>
         <block name="Constant" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1041,7 +1041,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1056,7 +1056,7 @@
           </parameters>
         </block>
         <block name="Integral_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1155,7 +1155,7 @@
           </parameters>
         </block>
         <block name="Constant_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1203,7 +1203,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1218,7 +1218,7 @@
           </parameters>
         </block>
         <block name="Block" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1304,7 +1304,7 @@
           </parameters>
         </block>
         <block name="EventInput_2" type="activation_in_port">
-          <template name="system/Ports/EventInput"/>
+          <template name="system/Ports/EventInput" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1352,7 +1352,7 @@
           </parameters>
         </block>
         <block name="Integral_2" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1451,7 +1451,7 @@
           </parameters>
         </block>
         <block name="Constant_2" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1499,7 +1499,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1514,7 +1514,7 @@
           </parameters>
         </block>
         <block name="Block_2" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1600,7 +1600,7 @@
           </parameters>
         </block>
         <block name="Constant_3" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1648,7 +1648,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,10" color="255,255,255,255"/>
+                <label visible="1" font="Arial,11" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1663,7 +1663,7 @@
           </parameters>
         </block>
         <block name="Integral_3" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1762,7 +1762,7 @@
           </parameters>
         </block>
         <block name="EventInput_3" type="activation_in_port">
-          <template name="system/Ports/EventInput"/>
+          <template name="system/Ports/EventInput" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1810,7 +1810,7 @@
           </parameters>
         </block>
         <block name="Block_3" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -1896,7 +1896,7 @@
           </parameters>
         </block>
         <block name="Mux" type="block">
-          <template name="system/Routing/Mux"/>
+          <template name="system/Routing/Mux" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -2355,7 +2355,7 @@
       </parameters>
     </block>
     <block name="input" type="block">
-      <template name="system/SignalViewers/Scope"/>
+      <template name="system/SignalViewers/Scope" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="0"/>
@@ -2469,7 +2469,7 @@
       </parameters>
     </block>
     <block name="Toggle" type="block">
-      <template name="system/SignalGenerators/Toggle"/>
+      <template name="system/SignalGenerators/Toggle" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2532,7 +2532,7 @@
       </parameters>
     </block>
     <block name="Sum_3" type="block">
-      <template name="system/MathOperations/Sum"/>
+      <template name="system/MathOperations/Sum" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2621,7 +2621,7 @@
       </parameters>
     </block>
     <block name="SineWaveGenerator_1" type="block">
-      <template name="system/SignalGenerators/SineWaveGenerator"/>
+      <template name="system/SignalGenerators/SineWaveGenerator" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2686,7 +2686,7 @@
       </parameters>
     </block>
     <block name="Constant_1" type="block">
-      <template name="system/SignalGenerators/Constant"/>
+      <template name="system/SignalGenerators/Constant" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2749,7 +2749,7 @@
       </parameters>
     </block>
     <block name="Gain" type="block">
-      <template name="system/MathOperations/Gain"/>
+      <template name="system/MathOperations/Gain" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2825,7 +2825,7 @@
       </parameters>
     </block>
     <block name="SampleClock_1" type="block">
-      <template name="system/ActivationOperations/SampleClock"/>
+      <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2875,7 +2875,7 @@
       </parameters>
     </block>
     <block name="SampleClock_2" type="block">
-      <template name="system/ActivationOperations/SampleClock"/>
+      <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -2925,7 +2925,7 @@
       </parameters>
     </block>
     <block name="EventClock" type="block">
-      <template name="system/ActivationOperations/EventClock"/>
+      <template name="system/ActivationOperations/EventClock" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="1"/>
@@ -2974,7 +2974,7 @@
       </parameters>
     </block>
     <block name="Block_5" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3060,7 +3060,7 @@
       </parameters>
     </block>
     <block name="FMU" type="block">
-      <template name="system/CoSimulation/FMU"/>
+      <template name="system/CoSimulation/FMU" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3113,7 +3113,7 @@
             <background color="64,64,64,255"/>
           </graphics>
         </port>
-        <port name="&quot;ExternalClock1&quot; &quot;ExternalClock2&quot; &quot;ExternalClock3&quot; &quot;ExternalClock4&quot;" type="variableport">
+        <port name="&quot;TriggeredClock1&quot; &quot;TriggeredClock2&quot; &quot;TriggeredClock3&quot; &quot;TriggeredClock4&quot;" type="variableport">
           <properties>
             <property name="iotype" value="in"/>
             <property name="datatype" value="Activation"/>
@@ -3163,7 +3163,7 @@
             </columns>
             <rows number="nclocks">
               <row>
-                <value>&apos;ExternalClock1&apos;</value>
+                <value>&apos;TriggeredClock1&apos;</value>
                 <value>&apos;External triggered input clock: 2, nevprt=1&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3175,7 +3175,7 @@
                 <value>2</value>
               </row>
               <row>
-                <value>&apos;ExternalClock2&apos;</value>
+                <value>&apos;TriggeredClock2&apos;</value>
                 <value>&apos;External triggered input clock: 3, nevprt=2&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3187,7 +3187,7 @@
                 <value>3</value>
               </row>
               <row>
-                <value>&apos;ExternalClock3&apos;</value>
+                <value>&apos;TriggeredClock3&apos;</value>
                 <value>&apos;External triggered input clock: 4, nevprt=3&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3199,7 +3199,7 @@
                 <value>4</value>
               </row>
               <row>
-                <value>&apos;ExternalClock4&apos;</value>
+                <value>&apos;TriggeredClock4&apos;</value>
                 <value>&apos;External triggered input clock: 5, nevprt=4&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3237,7 +3237,7 @@
                 <value>&apos;Input&apos;</value>
                 <value>&apos;, Dims: 1&apos;</value>
                 <value>&apos;Float64&apos;</value>
-                <value>0</value>
+                <value>1</value>
               </row>
             </rows>
           </parametertable>
@@ -3256,7 +3256,7 @@
               </row>
             </rows>
           </parametertable>
-          <parameter name="nparam" value="0"/>
+          <parameter name="nparam" value="1"/>
           <parametertable name="params">
             <columns number="7">
               <parameter name="name" value="&apos;&apos;"/>
@@ -3268,6 +3268,15 @@
               <parameter name="reference" value="0"/>
             </columns>
             <rows number="nparam">
+              <row>
+                <value>&apos;Activate_Continuous_state&apos;</value>
+                <value>&apos;Continuous-time state, Dims: [4]&apos;</value>
+                <value>&apos;Float64&apos;</value>
+                <value>&apos;&apos;</value>
+                <value>[0,0,0,0]</value>
+                <value>[0,0,0,0]</value>
+                <value>9</value>
+              </row>
             </rows>
           </parametertable>
           <parameter name="nlocals" value="0"/>
@@ -3325,7 +3334,7 @@
       </parameters>
     </block>
     <block name="Block_6" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3411,7 +3420,7 @@
       </parameters>
     </block>
     <block name="Block_7" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3497,7 +3506,7 @@
       </parameters>
     </block>
     <block name="Block_8" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3583,7 +3592,7 @@
       </parameters>
     </block>
     <block name="EventGenerate" type="block">
-      <template name="system/ActivationOperations/EventGenerate"/>
+      <template name="system/ActivationOperations/EventGenerate" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3641,7 +3650,7 @@
       </parameters>
     </block>
     <block name="ActivationSplit" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3727,7 +3736,7 @@
       </parameters>
     </block>
     <block name="FMU_1" type="block">
-      <template name="system/CoSimulation/FMU"/>
+      <template name="system/CoSimulation/FMU" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -3780,7 +3789,7 @@
             <background color="64,64,64,255"/>
           </graphics>
         </port>
-        <port name="&quot;ExternalClock1&quot; &quot;ExternalClock2&quot; &quot;ExternalClock3&quot; &quot;ExternalClock4&quot;" type="variableport">
+        <port name="&quot;TriggeredClock1&quot; &quot;TriggeredClock2&quot; &quot;TriggeredClock3&quot; &quot;TriggeredClock4&quot;" type="variableport">
           <properties>
             <property name="iotype" value="in"/>
             <property name="datatype" value="Activation"/>
@@ -3830,7 +3839,7 @@
             </columns>
             <rows number="nclocks">
               <row>
-                <value>&apos;ExternalClock1&apos;</value>
+                <value>&apos;TriggeredClock1&apos;</value>
                 <value>&apos;External triggered input clock: 2, nevprt=1&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3842,7 +3851,7 @@
                 <value>2</value>
               </row>
               <row>
-                <value>&apos;ExternalClock2&apos;</value>
+                <value>&apos;TriggeredClock2&apos;</value>
                 <value>&apos;External triggered input clock: 3, nevprt=2&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3854,7 +3863,7 @@
                 <value>3</value>
               </row>
               <row>
-                <value>&apos;ExternalClock3&apos;</value>
+                <value>&apos;TriggeredClock3&apos;</value>
                 <value>&apos;External triggered input clock: 4, nevprt=3&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3866,7 +3875,7 @@
                 <value>4</value>
               </row>
               <row>
-                <value>&apos;ExternalClock4&apos;</value>
+                <value>&apos;TriggeredClock4&apos;</value>
                 <value>&apos;External triggered input clock: 5, nevprt=4&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -3904,7 +3913,7 @@
                 <value>&apos;Input&apos;</value>
                 <value>&apos;, Dims: 1&apos;</value>
                 <value>&apos;Float64&apos;</value>
-                <value>0*0</value>
+                <value>1</value>
               </row>
             </rows>
           </parametertable>
@@ -3923,7 +3932,7 @@
               </row>
             </rows>
           </parametertable>
-          <parameter name="nparam" value="0"/>
+          <parameter name="nparam" value="1"/>
           <parametertable name="params">
             <columns number="7">
               <parameter name="name" value="&apos;&apos;"/>
@@ -3935,6 +3944,15 @@
               <parameter name="reference" value="0"/>
             </columns>
             <rows number="nparam">
+              <row>
+                <value>&apos;Activate_Continuous_state&apos;</value>
+                <value>&apos;Continuous-time state, Dims: [4]&apos;</value>
+                <value>&apos;Float64&apos;</value>
+                <value>&apos;&apos;</value>
+                <value>[0,0,0,0]</value>
+                <value>[0,0,0,0]</value>
+                <value>9</value>
+              </row>
             </rows>
           </parametertable>
           <parameter name="nlocals" value="0"/>
@@ -3992,7 +4010,7 @@
       </parameters>
     </block>
     <block name="Split" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4078,7 +4096,7 @@
       </parameters>
     </block>
     <block name="Block" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4164,7 +4182,7 @@
       </parameters>
     </block>
     <block name="Block_1" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4250,7 +4268,7 @@
       </parameters>
     </block>
     <block name="Block_2" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4336,7 +4354,7 @@
       </parameters>
     </block>
     <block name="Scope" type="block">
-      <template name="system/SignalViewers/Scope"/>
+      <template name="system/SignalViewers/Scope" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="0"/>
@@ -4478,7 +4496,7 @@
       </parameters>
     </block>
     <block name="ToCSV" type="block">
-      <template name="system/SignalExporters/ToCSV"/>
+      <template name="system/SignalExporters/ToCSV" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4560,7 +4578,7 @@
       </parameters>
     </block>
     <block name="Block_3" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4646,7 +4664,7 @@
       </parameters>
     </block>
     <block name="ToCSV_1" type="block">
-      <template name="system/SignalExporters/ToCSV"/>
+      <template name="system/SignalExporters/ToCSV" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -4728,7 +4746,7 @@
       </parameters>
     </block>
     <block name="Block_4" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
