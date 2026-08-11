@@ -1,15 +1,15 @@
 <!-- HTML approach -->
 <img src="https://github.com/altairengineering/fmus/blob/master/icon_Activate.png"  width="200"/>
 
-# [Altair Twin Activate](https://altair.com/twin-activate)
-Altair Twin Activate is an open and flexible integration platform for comprehensive system-of-systems simulation. 
-Based on a hybrid block diagram modeling environment for signal blocks, object oriented physical components, and electric and electronics systems, Altair Twin Activate allows multiphysics analysis throughout the development cycle.
+# [Simcenter Twin Activate](https://www.siemens.com/en-us/products/simcenter/systems-simulation/twin-activate/)
+Simcenter Twin Activate is an open and flexible integration platform for comprehensive system-of-systems simulation. 
+Based on a hybrid block diagram modeling environment for signal blocks, object oriented physical components, and electric and electronics systems, Simcenter Twin Activate allows multiphysics analysis throughout the development cycle.
 The comprehensive support of math modeling, scripting and modeling languages, and tool-independent Functional Mock-up Interface (FMI) standard facilitate the re-use and integration of existing code within the same model. 
-A free academic version of Twin Activate can be downloaded at [ Twin Activate student edition](https://altairuniversity.com/free-altair-student-edition/)
+A free academic version of Simcenter Twin Activate can be downloaded at [ Simcenter Twin Activate student edition](https://www.siemens.com/en-us/company/academic-future-workforce/engineering-student-resources/engineering-student-software/altair-student-edition/). FMU import is fully operational in the student version.
 
 *******************************************************************************************
 
-Please report any failure, report an issue or send your comments or suggestions to Masoud Najafi (masoud@altair.com)
+Please report any failure, report an issue or send your comments or suggestions to Masoud Najafi (masoud.najafi@siemens.com)
 
 *******************************************************************************************
 
