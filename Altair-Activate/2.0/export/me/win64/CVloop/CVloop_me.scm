@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="CVloop_me">
-  <header formatversion="2" hwxversion="2020.0" script="oml"/>
+  <header formatversion="2" hwxversion="2026.1" script="oml"/>
   <edition>
     <properties>
       <property name="creator" value="ganhai"/>
       <property name="creationdate" value="11/03/14 20:49:20"/>
       <property name="revision" value="0"/>
-      <property name="lastmodifieddate" value="11/17/20 08:11:12"/>
+      <property name="lastmodifieddate" value="08/11/26 15:49:46"/>
       <property name="comments" value="Cardiovascular Loop 7/1/2013&#xA;&#xA;This model is based on the model, PF1, given in &quot;Mathematical and Computer Modeling of Physiological Systems&quot; by Vincent C. Rideout. Prentice Hall, Englewood Cliffs, NJ.  The book has been out of print for a few years but contained some good model examples. &#xA;The system models a complete Cardiovascular(CV) Loop. The plotted outputs are as follows:&#xA;1) Left Heart--Aortic Pressure, Left Ventricular Pressure and Left Ventricular Flow.&#xA;2) Right Heart-- Pulmonary Artery Pressure, Right Ventricular Pressure and Right Ventricular Flow.&#xA;3) Simulated Impedance Cardiogram (ZCT)  obtained by summing and differentiating the fluid volumes on each of the model capitances that represent changes in thoracic fluid volume.&#xA;4) Pressure/Volume Loop of the Left Ventricle, the Enclosed Area of which represents the amount of Work done by the left ventricle. &#xA;The model uses an electrical analog to simulate fluid conditions. Fluid components, Resistance, Compliance and Inertance are simulated by Electrical Resistance, Capacitance and Inductance, respectively. The heart is simulated by  variable capacitors. The four valves are simulated by Limiting Integrators.&#xA;The heart rate can be changed by changing its constant value.&#xA;Once the user is familiar with the model many Physiological/Medical problems can be duplicated, for example: Right/Left Heart Failure, Valvular Stenosis and Regurgitation, Ventrical Septal Defect and many more.&#xA;&#xA;Model by&#xA;Bruce C. Taylor, PhD&#xA;Associate Professor(Retired) of Biomedical Engineering&#xA;The University of Akron, Akron, Ohio&#xA;"/>
     </properties>
   </edition>
@@ -16,11 +16,12 @@
     <block name="CVLoop" type="block">
       <diagram>
         <block name="SineWaveGenerator_1" type="block">
-          <template name="system/SignalGenerators/SineWaveGenerator"/>
+          <template name="system/SignalGenerators/SineWaveGenerator" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -80,11 +81,12 @@
           </parameters>
         </block>
         <block name="SineWaveGenerator" type="block">
-          <template name="system/SignalGenerators/SineWaveGenerator"/>
+          <template name="system/SignalGenerators/SineWaveGenerator" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -144,11 +146,12 @@
           </parameters>
         </block>
         <block name="Constant" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -206,11 +209,12 @@
           </parameters>
         </block>
         <block name="Sum" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -297,11 +301,12 @@
           </parameters>
         </block>
         <block name="Saturation" type="block">
-          <template name="system/Hybrid/Saturation"/>
+          <template name="system/Hybrid/Saturation" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -373,11 +378,12 @@
           </parameters>
         </block>
         <block name="Gain" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -448,11 +454,12 @@
           </parameters>
         </block>
         <block name="Sum_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -536,11 +543,12 @@
           </parameters>
         </block>
         <block name="Constant_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -598,11 +606,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -686,11 +695,12 @@
           </parameters>
         </block>
         <block name="Constant_1_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -748,11 +758,12 @@
           </parameters>
         </block>
         <block name="Gain_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -823,11 +834,12 @@
           </parameters>
         </block>
         <block name="SetSignal" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -871,11 +883,12 @@
           </parameters>
         </block>
         <block name="Split" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -956,11 +969,12 @@
           </parameters>
         </block>
         <block name="Gain_1_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1031,11 +1045,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1119,11 +1134,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1207,11 +1223,12 @@
           </parameters>
         </block>
         <block name="Gain_1_2" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1282,11 +1299,12 @@
           </parameters>
         </block>
         <block name="Constant_1_1_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1344,11 +1362,12 @@
           </parameters>
         </block>
         <block name="SetSignal_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1392,11 +1411,12 @@
           </parameters>
         </block>
         <block name="Block" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1477,11 +1497,12 @@
           </parameters>
         </block>
         <block name="Sum_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1568,11 +1589,12 @@
           </parameters>
         </block>
         <block name="Block_1" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1653,11 +1675,12 @@
           </parameters>
         </block>
         <block name="Integral" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1750,11 +1773,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1838,11 +1862,12 @@
           </parameters>
         </block>
         <block name="Integral_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -1935,11 +1960,12 @@
           </parameters>
         </block>
         <block name="Gain_2" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2010,11 +2036,12 @@
           </parameters>
         </block>
         <block name="Block_2" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2095,11 +2122,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2183,11 +2211,12 @@
           </parameters>
         </block>
         <block name="Gain_3" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2258,11 +2287,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2306,11 +2336,12 @@
           </parameters>
         </block>
         <block name="Block_3" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2391,11 +2422,12 @@
           </parameters>
         </block>
         <block name="Constant_2" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2453,11 +2485,12 @@
           </parameters>
         </block>
         <block name="Sum_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2544,11 +2577,12 @@
           </parameters>
         </block>
         <block name="Block_4" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2629,11 +2663,12 @@
           </parameters>
         </block>
         <block name="Integral_2" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2731,11 +2766,12 @@
           </parameters>
         </block>
         <block name="Gain_4" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2806,11 +2842,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2894,11 +2931,12 @@
           </parameters>
         </block>
         <block name="Integral_3" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -2991,11 +3029,12 @@
           </parameters>
         </block>
         <block name="Block_5" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3076,11 +3115,12 @@
           </parameters>
         </block>
         <block name="Block_6" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3161,11 +3201,12 @@
           </parameters>
         </block>
         <block name="Gain_5" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3236,11 +3277,12 @@
           </parameters>
         </block>
         <block name="Gain_6" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3311,11 +3353,12 @@
           </parameters>
         </block>
         <block name="Block_7" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3396,11 +3439,12 @@
           </parameters>
         </block>
         <block name="PRV" type="block">
-          <template name="system/MathOperations/Product"/>
+          <template name="system/MathOperations/Product" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -3485,11 +3529,12 @@
           </parameters>
         </block>
         <block name="Constant_3" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3547,11 +3592,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_4" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3635,11 +3681,12 @@
           </parameters>
         </block>
         <block name="Sum_3" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3726,11 +3773,12 @@
           </parameters>
         </block>
         <block name="Gain_7" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3801,11 +3849,12 @@
           </parameters>
         </block>
         <block name="Integral_4" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3903,11 +3952,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -3991,11 +4041,12 @@
           </parameters>
         </block>
         <block name="Block_8" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4076,11 +4127,12 @@
           </parameters>
         </block>
         <block name="Integral_5" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4173,11 +4225,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4221,11 +4274,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4309,11 +4363,12 @@
           </parameters>
         </block>
         <block name="Block_9" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4394,11 +4449,12 @@
           </parameters>
         </block>
         <block name="Integral_6" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4491,11 +4547,12 @@
           </parameters>
         </block>
         <block name="PLV" type="block">
-          <template name="system/MathOperations/Product"/>
+          <template name="system/MathOperations/Product" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -4580,11 +4637,12 @@
           </parameters>
         </block>
         <block name="Constant_4" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4642,11 +4700,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_4_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4730,11 +4789,12 @@
           </parameters>
         </block>
         <block name="Block_10" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4815,11 +4875,12 @@
           </parameters>
         </block>
         <block name="Integral_7" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4912,11 +4973,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -4960,11 +5022,12 @@
           </parameters>
         </block>
         <block name="Block_11" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5045,11 +5108,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_4_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5133,11 +5197,12 @@
           </parameters>
         </block>
         <block name="Sum_4" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5224,11 +5289,12 @@
           </parameters>
         </block>
         <block name="Block_12" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5309,11 +5375,12 @@
           </parameters>
         </block>
         <block name="Gain_8" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5384,11 +5451,12 @@
           </parameters>
         </block>
         <block name="Integral_8" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5486,11 +5554,12 @@
           </parameters>
         </block>
         <block name="Block_13" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5571,11 +5640,12 @@
           </parameters>
         </block>
         <block name="Block_14" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5656,11 +5726,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5744,11 +5815,12 @@
           </parameters>
         </block>
         <block name="Constant_5" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5806,11 +5878,12 @@
           </parameters>
         </block>
         <block name="Gain_9" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5881,11 +5954,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -5969,11 +6043,12 @@
           </parameters>
         </block>
         <block name="Gain_10" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6044,11 +6119,12 @@
           </parameters>
         </block>
         <block name="Constant_6" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6106,11 +6182,12 @@
           </parameters>
         </block>
         <block name="Sum_1_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6194,11 +6271,12 @@
           </parameters>
         </block>
         <block name="Gain_11" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6269,11 +6347,12 @@
           </parameters>
         </block>
         <block name="Sum_3_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6360,11 +6439,12 @@
           </parameters>
         </block>
         <block name="Block_15" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6445,11 +6525,12 @@
           </parameters>
         </block>
         <block name="Integral_9" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6542,11 +6623,12 @@
           </parameters>
         </block>
         <block name="Sum_1_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6630,11 +6712,12 @@
           </parameters>
         </block>
         <block name="Sum_1_2_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6718,11 +6801,12 @@
           </parameters>
         </block>
         <block name="Gain_12" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6793,11 +6877,12 @@
           </parameters>
         </block>
         <block name="Block_16" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6878,11 +6963,12 @@
           </parameters>
         </block>
         <block name="Block_17" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -6963,11 +7049,12 @@
           </parameters>
         </block>
         <block name="Integral_10" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7060,11 +7147,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7148,11 +7236,12 @@
           </parameters>
         </block>
         <block name="Block_18" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7233,11 +7322,12 @@
           </parameters>
         </block>
         <block name="Integral_11" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7330,11 +7420,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1_1_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7378,11 +7469,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7466,11 +7558,12 @@
           </parameters>
         </block>
         <block name="Block_19" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7551,11 +7644,12 @@
           </parameters>
         </block>
         <block name="Constant_7" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7613,11 +7707,12 @@
           </parameters>
         </block>
         <block name="Gain_13" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7688,11 +7783,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7776,11 +7872,12 @@
           </parameters>
         </block>
         <block name="Gain_14" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7851,11 +7948,12 @@
           </parameters>
         </block>
         <block name="Block_20" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -7936,11 +8034,12 @@
           </parameters>
         </block>
         <block name="Integral_12" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8033,11 +8132,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8121,11 +8221,12 @@
           </parameters>
         </block>
         <block name="Constant_7_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8183,11 +8284,12 @@
           </parameters>
         </block>
         <block name="Gain_13_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8258,11 +8360,12 @@
           </parameters>
         </block>
         <block name="Sum_5" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8349,11 +8452,12 @@
           </parameters>
         </block>
         <block name="Block_21" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8434,11 +8538,12 @@
           </parameters>
         </block>
         <block name="Constant_8" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8496,11 +8601,12 @@
           </parameters>
         </block>
         <block name="Product" type="block">
-          <template name="system/MathOperations/Product"/>
+          <template name="system/MathOperations/Product" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8585,11 +8691,12 @@
           </parameters>
         </block>
         <block name="Integral_13" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8682,11 +8789,12 @@
           </parameters>
         </block>
         <block name="Block_23" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8767,11 +8875,12 @@
           </parameters>
         </block>
         <block name="Integral_14" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8864,11 +8973,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -8952,11 +9062,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9040,11 +9151,12 @@
           </parameters>
         </block>
         <block name="Gain_15" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9115,11 +9227,12 @@
           </parameters>
         </block>
         <block name="Block_22" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9200,11 +9313,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9288,11 +9402,12 @@
           </parameters>
         </block>
         <block name="Gain_16" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9363,11 +9478,12 @@
           </parameters>
         </block>
         <block name="Constant_9" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9425,11 +9541,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9513,11 +9630,12 @@
           </parameters>
         </block>
         <block name="Block_24" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9598,11 +9716,12 @@
           </parameters>
         </block>
         <block name="Block_25" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9683,11 +9802,12 @@
           </parameters>
         </block>
         <block name="Gain_17" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9758,11 +9878,12 @@
           </parameters>
         </block>
         <block name="Sum_1_3_2_1_1_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9846,11 +9967,12 @@
           </parameters>
         </block>
         <block name="Block_27" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -9931,11 +10053,12 @@
           </parameters>
         </block>
         <block name="Integral_15" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10028,11 +10151,12 @@
           </parameters>
         </block>
         <block name="Block_26" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10113,11 +10237,12 @@
           </parameters>
         </block>
         <block name="Gain_18" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10188,11 +10313,12 @@
           </parameters>
         </block>
         <block name="Block_28" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10273,11 +10399,12 @@
           </parameters>
         </block>
         <block name="SetSignal_3" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10321,11 +10448,12 @@
           </parameters>
         </block>
         <block name="Sum_1_2_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10409,11 +10537,12 @@
           </parameters>
         </block>
         <block name="Sum_1_2_2_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10497,11 +10626,12 @@
           </parameters>
         </block>
         <block name="Constant_10" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10559,11 +10689,12 @@
           </parameters>
         </block>
         <block name="Integral_16" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10656,11 +10787,12 @@
           </parameters>
         </block>
         <block name="Gain_19" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10731,11 +10863,12 @@
           </parameters>
         </block>
         <block name="SetSignal_3_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10779,11 +10912,12 @@
           </parameters>
         </block>
         <block name="Block_29" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10864,11 +10998,12 @@
           </parameters>
         </block>
         <block name="Sum_6" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -10955,11 +11090,12 @@
           </parameters>
         </block>
         <block name="Block_30" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11040,11 +11176,12 @@
           </parameters>
         </block>
         <block name="Block_31" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11125,11 +11262,12 @@
           </parameters>
         </block>
         <block name="Integral_16_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11227,11 +11365,12 @@
           </parameters>
         </block>
         <block name="Gain_20" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11302,11 +11441,12 @@
           </parameters>
         </block>
         <block name="Block_32" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11387,11 +11527,12 @@
           </parameters>
         </block>
         <block name="Block_33" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11472,11 +11613,12 @@
           </parameters>
         </block>
         <block name="Gain_21" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11547,11 +11689,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11635,11 +11778,12 @@
           </parameters>
         </block>
         <block name="Block_34" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11720,11 +11864,12 @@
           </parameters>
         </block>
         <block name="Gain_22" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11795,11 +11940,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11883,11 +12029,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1_2" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -11931,11 +12078,12 @@
           </parameters>
         </block>
         <block name="Block_35" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12016,11 +12164,12 @@
           </parameters>
         </block>
         <block name="Constant_11" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12078,11 +12227,12 @@
           </parameters>
         </block>
         <block name="Integral_17" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12175,11 +12325,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12263,11 +12414,12 @@
           </parameters>
         </block>
         <block name="Block_36" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12348,11 +12500,12 @@
           </parameters>
         </block>
         <block name="Gain_23" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12423,11 +12576,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12511,11 +12665,12 @@
           </parameters>
         </block>
         <block name="Gain_23_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12586,11 +12741,12 @@
           </parameters>
         </block>
         <block name="Block_37" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12671,11 +12827,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1_2_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12719,11 +12876,12 @@
           </parameters>
         </block>
         <block name="Constant_11_1" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12781,11 +12939,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12869,11 +13028,12 @@
           </parameters>
         </block>
         <block name="Block_38" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -12954,11 +13114,12 @@
           </parameters>
         </block>
         <block name="Integral_17_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13051,11 +13212,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1_2" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13139,11 +13301,12 @@
           </parameters>
         </block>
         <block name="Block_39" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13224,11 +13387,12 @@
           </parameters>
         </block>
         <block name="Integral_17_1_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13321,11 +13485,12 @@
           </parameters>
         </block>
         <block name="Sum_7" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13412,11 +13577,12 @@
           </parameters>
         </block>
         <block name="Gain_24" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13487,11 +13653,12 @@
           </parameters>
         </block>
         <block name="Block_40" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13572,11 +13739,12 @@
           </parameters>
         </block>
         <block name="Block_41" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13657,11 +13825,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1_2_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13745,11 +13914,12 @@
           </parameters>
         </block>
         <block name="Block_42" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13830,11 +14000,12 @@
           </parameters>
         </block>
         <block name="Gain_25" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13905,11 +14076,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1_2_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -13993,11 +14165,12 @@
           </parameters>
         </block>
         <block name="Constant_12" type="block">
-          <template name="system/SignalGenerators/Constant"/>
+          <template name="system/SignalGenerators/Constant" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14055,11 +14228,12 @@
           </parameters>
         </block>
         <block name="SetSignal_2_1_2_1_1" type="block">
-          <template name="system/Routing/SetSignal"/>
+          <template name="system/Routing/SetSignal" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14103,11 +14277,12 @@
           </parameters>
         </block>
         <block name="Block_43" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14188,11 +14363,12 @@
           </parameters>
         </block>
         <block name="Gain_25_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14263,11 +14439,12 @@
           </parameters>
         </block>
         <block name="Integral_17_1_1_1" type="block">
-          <template name="system/Dynamical/Integral"/>
+          <template name="system/Dynamical/Integral" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14360,11 +14537,12 @@
           </parameters>
         </block>
         <block name="Sum_1_1_1_3_1_1_1_1_2_1_1_1" type="block">
-          <template name="system/MathOperations/Sum"/>
+          <template name="system/MathOperations/Sum" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14448,11 +14626,12 @@
           </parameters>
         </block>
         <block name="Block_44" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14533,11 +14712,12 @@
           </parameters>
         </block>
         <block name="Block_45" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14618,11 +14798,12 @@
           </parameters>
         </block>
         <block name="Block_46" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14703,11 +14884,12 @@
           </parameters>
         </block>
         <block name="Output2" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -14752,11 +14934,12 @@
           </parameters>
         </block>
         <block name="Block_47" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14837,11 +15020,12 @@
           </parameters>
         </block>
         <block name="Output3" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -14886,11 +15070,12 @@
           </parameters>
         </block>
         <block name="Gain_26" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -14961,11 +15146,12 @@
           </parameters>
         </block>
         <block name="Block_48" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15046,11 +15232,12 @@
           </parameters>
         </block>
         <block name="Gain_27" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15121,11 +15308,12 @@
           </parameters>
         </block>
         <block name="Block_49" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15206,11 +15394,12 @@
           </parameters>
         </block>
         <block name="Output4" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -15255,11 +15444,12 @@
           </parameters>
         </block>
         <block name="Gain_18_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15330,11 +15520,12 @@
           </parameters>
         </block>
         <block name="Output1" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -15379,11 +15570,12 @@
           </parameters>
         </block>
         <block name="Gain_18_1_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15454,11 +15646,12 @@
           </parameters>
         </block>
         <block name="Output5" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -15503,11 +15696,12 @@
           </parameters>
         </block>
         <block name="Block_50" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15588,11 +15782,12 @@
           </parameters>
         </block>
         <block name="Gain_26_1" type="block">
-          <template name="system/MathOperations/Gain"/>
+          <template name="system/MathOperations/Gain" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -15663,11 +15858,12 @@
           </parameters>
         </block>
         <block name="Output6" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -15712,11 +15908,12 @@
           </parameters>
         </block>
         <block name="Block_51" type="regular_split">
-          <template name="system/Links/Split"/>
+          <template name="system/Links/Split" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
             <property name="atomic" value="0"/>
+            <property name="status" value="1"/>
           </properties>
           <graphics>
             <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -17820,6 +18017,7 @@
         <property name="inlinable" value="1"/>
         <property name="atomic" value="0"/>
         <property name="status" value="1"/>
+        <property name="back" value="0"/>
       </properties>
       <graphics>
         <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
@@ -17928,11 +18126,12 @@
       </parameters>
     </block>
     <block name="Mux" type="block">
-      <template name="system/Routing/Mux"/>
+      <template name="system/Routing/Mux" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
         <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
       </properties>
       <graphics>
         <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -18004,11 +18203,12 @@
       </parameters>
     </block>
     <block name="Mux_1" type="block">
-      <template name="system/Routing/Mux"/>
+      <template name="system/Routing/Mux" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
         <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
       </properties>
       <graphics>
         <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -18080,7 +18280,7 @@
       </parameters>
     </block>
     <block name="Left Heart" type="block">
-      <template name="system/SignalViewers/Scope"/>
+      <template name="system/SignalViewers/Scope" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="0"/>
@@ -18194,7 +18394,7 @@
       </parameters>
     </block>
     <block name="LeftHeart_fmu" type="block">
-      <template name="system/SignalViewers/Scope"/>
+      <template name="system/SignalViewers/Scope" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="0"/>
@@ -18308,11 +18508,12 @@
       </parameters>
     </block>
     <block name="FromCSV" type="block">
-      <template name="system/SignalImporters/FromCSV"/>
+      <template name="system/SignalImporters/FromCSV" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
         <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
       </properties>
       <graphics>
         <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -18322,7 +18523,7 @@
         <size width="240" height="84"/>
         <rotate angle="0"/>
         <texts>
-          <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center">sb_CVLoop_ref.csv</text>
+          <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center">CVLoop_ref.csv</text>
         </texts>
         <images>
           <image name="image1" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
@@ -18376,7 +18577,8 @@
       </ports>
       <parameters>
         <section name="Parameters">
-          <parameter name="fname" value="&apos;sb_CVLoop_ref.csv&apos;"/>
+          <parameter name="fname" value="&apos;./CVLoop_ref.csv&apos;"/>
+          <parameter name="independent" value="&apos;time&apos;"/>
           <parameter name="nout" value="3"/>
           <parametertable name="outports">
             <columns number="2">
@@ -18410,6 +18612,316 @@
         </section>
       </parameters>
     </block>
+    <block name="FMU" type="block">
+      <template name="system/CoSimulation/FMU" libname="Activate"/>
+      <properties>
+        <property name="inlinable" value="0"/>
+        <property name="masked" value="1"/>
+        <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
+      </properties>
+      <graphics>
+        <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+        <frame shape="rectangle" visible="1" color="0,0,0,255" thickness="1.5"/>
+        <background color="255,255,255,255"/>
+        <position x="111.04174042692637" y="264.1787340316399"/>
+        <size width="264" height="120"/>
+        <rotate angle="0"/>
+        <texts>
+          <text name="text" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
+        </texts>
+        <images>
+          <image name="image1" file="CoSimulation/fmi_icon.png" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+        </images>
+        <flip value="0">
+          <images>
+            <image name="image2" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+          </images>
+        </flip>
+      </graphics>
+      <ports>
+        <port name="&quot;Output1&quot; &quot;Output2&quot; &quot;Output3&quot; &quot;Output4&quot; &quot;Output5&quot; &quot;Output6&quot;" type="variableport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="nout+nlocals"/>
+          </properties>
+          <graphics>
+            <location position="right"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="variableport">
+          <properties>
+            <property name="iotype" value="in"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="nin"/>
+          </properties>
+          <graphics>
+            <location position="left"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="variableport">
+          <properties>
+            <property name="iotype" value="in"/>
+            <property name="datatype" value="Activation"/>
+            <property name="portnumber" value="2*inevent+nevin"/>
+          </properties>
+          <graphics>
+            <location position="top"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
+            <background color="183,15,19,255"/>
+          </graphics>
+        </port>
+        <port name="" type="variableport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Activation"/>
+            <property name="portnumber" value="2*outevent+nevout"/>
+          </properties>
+          <graphics>
+            <location position="bottom"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
+            <background color="183,15,19,255"/>
+          </graphics>
+        </port>
+      </ports>
+      <parameters>
+        <section name="General Parameters">
+          <parameter name="FMUfilename" value="&apos;./CVLoop.fmu&apos;"/>
+          <parameter name="NX" value="22"/>
+          <parameter name="NZ" value="5"/>
+          <parameter name="nevin" value="0"/>
+          <parameter name="nevout" value="0"/>
+          <parameter name="nclocks" value="0"/>
+          <parametertable name="clocks">
+            <columns number="10">
+              <parameter name="name" value="&apos;&apos;"/>
+              <parameter name="description" value="&apos;&apos;"/>
+              <parameter name="causality" value="&apos;&apos;"/>
+              <parameter name="intervalVariability" value="&apos;constant&apos;"/>
+              <parameter name="intervalDecimal" value="0"/>
+              <parameter name="shiftDecimal" value="0"/>
+              <parameter name="resolution" value="0"/>
+              <parameter name="intervalCounter" value="0"/>
+              <parameter name="shiftCounter" value="0"/>
+              <parameter name="reference" value="0"/>
+            </columns>
+            <rows number="nclocks">
+            </rows>
+          </parametertable>
+          <parameter name="nin" value="0"/>
+          <parametertable name="inports">
+            <columns number="4">
+              <parameter name="name" value="&apos;&apos;"/>
+              <parameter name="description" value="&apos;&apos;"/>
+              <parameter name="it" value="&apos;Real&apos;"/>
+              <parameter name="dodependency" value="[1]"/>
+            </columns>
+            <rows number="nin">
+            </rows>
+          </parametertable>
+          <parameter name="nout" value="6"/>
+          <parametertable name="outports">
+            <columns number="3">
+              <parameter name="name" value="&apos;&apos;"/>
+              <parameter name="description" value="&apos;&apos;"/>
+              <parameter name="ot" value="&apos;Real&apos;"/>
+            </columns>
+            <rows number="nout">
+              <row>
+                <value>&apos;Output1&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+              <row>
+                <value>&apos;Output2&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+              <row>
+                <value>&apos;Output3&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+              <row>
+                <value>&apos;Output4&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+              <row>
+                <value>&apos;Output5&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+              <row>
+                <value>&apos;Output6&apos;</value>
+                <value>&apos;output, Dims: 1&apos;</value>
+                <value>&apos;Real&apos;</value>
+              </row>
+            </rows>
+          </parametertable>
+          <parameter name="nparam" value="0"/>
+          <parametertable name="params">
+            <columns number="7">
+              <parameter name="name" value="&apos;&apos;"/>
+              <parameter name="description" value="&apos;&apos;"/>
+              <parameter name="tp" value="&apos;Real&apos;"/>
+              <parameter name="unit" value="&apos;&apos;"/>
+              <parameter name="value" value="0"/>
+              <parameter name="defvalue" value="0"/>
+              <parameter name="reference" value="0"/>
+            </columns>
+            <rows number="nparam">
+            </rows>
+          </parametertable>
+          <parameter name="nlocals" value="0"/>
+          <parameter name="local_names" value="{}"/>
+          <parameter name="local_types" value="{}"/>
+          <parameter name="local_refrs" value="{}"/>
+        </section>
+        <section name="Advanced">
+          <parameter name="run_as_me" value="1"/>
+          <parameter name="tolerancecontrolled" value="1"/>
+          <parameter name="stoptimedefined" value="1"/>
+          <parameter name="deleteafteruse" value="1"/>
+          <parameter name="inevent" value="0"/>
+          <parameter name="outevent" value="0"/>
+          <parameter name="resources" value="&apos;&apos;"/>
+          <parameter name="tempdir" value="&apos;&apos;"/>
+          <parameter name="ipc" value="0"/>
+          <parameter name="nEnvVar" value="0"/>
+          <parametertable name="EnvVars">
+            <columns number="2">
+              <parameter name="varname" value="&apos;&apos;"/>
+              <parameter name="varvalue" value="&apos;&apos;"/>
+            </columns>
+            <rows number="nEnvVar">
+            </rows>
+          </parametertable>
+        </section>
+        <section name="Reporting">
+          <parameter name="enable_fmulogging" value="1"/>
+          <parameter name="simloglevel" value="&apos;Warning&apos;"/>
+          <parameter name="add_Activate_messages" value="1"/>
+          <parameter name="fmulogging_cats" value="&apos;&apos;"/>
+          <parameter name="log_file_name" value="&apos;&apos;"/>
+          <parameter name="csv" value="&apos;;&apos;"/>
+          <parameter name="out_enum_as_int_flag" value="1"/>
+          <parameter name="log_only_outputs" value="1"/>
+          <parameter name="result_file" value="&apos;&apos;"/>
+        </section>
+        <section name="Model Exchange">
+          <parameter name="stepevent" value="1"/>
+          <parameter name="stateevent" value="1"/>
+          <parameter name="timeevent" value="1"/>
+          <parameter name="OutputOn" value="0"/>
+          <parameter name="meshpoints" value="1"/>
+          <parameter name="superdensetimes" value="1"/>
+        </section>
+        <section name="Co-Simulation">
+          <parameter name="fixedComStepsize" value="0.0"/>
+          <parameter name="provideDerivative" value="0"/>
+          <parameter name="exploitOutDerivative" value="0"/>
+          <parameter name="visible" value="0"/>
+          <parameter name="EnableRollback" value="0"/>
+          <parameter name="EnableDirectDer" value="0"/>
+        </section>
+      </parameters>
+    </block>
+    <block name="Split" type="regular_split">
+      <template name="system/Links/Split" libname="Activate"/>
+      <properties>
+        <property name="inlinable" value="0"/>
+        <property name="masked" value="1"/>
+        <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
+      </properties>
+      <graphics>
+        <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+        <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
+        <background color="64,64,64,255"/>
+        <position x="454.5212363688316" y="141.15646362304693"/>
+        <size width="0" height="0"/>
+        <rotate angle="0"/>
+        <texts>
+          <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
+        </texts>
+        <images>
+          <image name="image1" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+        </images>
+        <flip value="0">
+          <images>
+            <image name="image2" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+          </images>
+        </flip>
+      </graphics>
+      <ports>
+        <port name="" type="fixedport">
+          <properties>
+            <property name="iotype" value="in"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="1"/>
+          </properties>
+          <graphics>
+            <location position="left"/>
+            <label visible="1" font="Arial,10" color="255,255,255,255"/>
+            <frame shape="point" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="fixedport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="1"/>
+          </properties>
+          <graphics>
+            <location position="right"/>
+            <label visible="1" font="Arial,10" color="255,255,255,255"/>
+            <frame shape="point" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="fixedport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="2"/>
+          </properties>
+          <graphics>
+            <location position="right"/>
+            <label visible="1" font="Arial,10" color="255,255,255,255"/>
+            <frame shape="point" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="fixedport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="3"/>
+          </properties>
+          <graphics>
+            <location position="right"/>
+            <label visible="1" font="Arial,10" color="255,255,255,255"/>
+            <frame shape="point" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+      </ports>
+      <parameters>
+        <section name="Parameters">
+        </section>
+      </parameters>
+    </block>
     <link name="" type="Explicit">
       <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
       <from block="Mux" port="1" iotype="out"/>
@@ -18433,28 +18945,8 @@
     </link>
     <link name="" type="Explicit">
       <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
-      <from block="CVLoop" port="2" iotype="out"/>
-      <to block="Mux" port="2" iotype="in"/>
-      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
-      <points>
-        <point x="498.75199999999995" y="15.39370793806008"/>
-        <point x="498.752" y="21.393698999999998"/>
-      </points>
-    </link>
-    <link name="" type="Explicit">
-      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
-      <from block="CVLoop" port="3" iotype="out"/>
-      <to block="Mux" port="3" iotype="in"/>
-      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
-      <points>
-        <point x="519.752" y="29.393713142162493"/>
-        <point x="519.752" y="41.39369899999999"/>
-      </points>
-    </link>
-    <link name="" type="Explicit">
-      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
       <from block="FromCSV" port="1" iotype="out"/>
-      <to block="Mux_1" port="1" iotype="in"/>
+      <to block="Split" port="1" iotype="in"/>
       <pen shape="line" color="64,64,64,255" thickness="1.5"/>
       <points>
         <point x="440.91461181640625" y="141.15646362304693"/>
@@ -18478,6 +18970,33 @@
       <points>
         <point x="495.58312990820315" y="201.15646362304682"/>
         <point x="495.58312990820315" y="181.15646362304688"/>
+      </points>
+    </link>
+    <link name="" type="Explicit">
+      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+      <from block="Mux" port="2" iotype="in"/>
+      <to block="Split" port="2" iotype="out"/>
+      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
+      <points>
+        <point x="550.251648" y="18.456897349824008"/>
+        <point x="454.5212363688316" y="18.456897349824008"/>
+      </points>
+    </link>
+    <link name="" type="Explicit">
+      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+      <from block="Split" port="1" iotype="out"/>
+      <to block="Mux_1" port="1" iotype="in"/>
+      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
+      <points/>
+    </link>
+    <link name="" type="Explicit">
+      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+      <from block="FMU" port="1" iotype="out"/>
+      <to block="Mux" port="3" iotype="in"/>
+      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
+      <points>
+        <point x="467.6466942134632" y="274.1787340316399"/>
+        <point x="467.6466942134632" y="41.39369899999999"/>
       </points>
     </link>
     <context>HR=72*6.28/60;&#xA;upper=1e5;&#xA;lower=0;&#xA;AV_lower=-100;&#xA;</context>
