@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="triggered_and_periodic_clock">
-  <header formatversion="2" hwxversion="2026.1" script="oml"/>
+  <header formatversion="2" hwxversion="2612.0" script="oml"/>
   <edition>
     <properties>
       <property name="creator" value="masoud"/>
@@ -366,7 +366,7 @@
               </properties>
               <graphics>
                 <location position="top" x="0.5" y="0.2"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -584,7 +584,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -611,7 +611,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="-4.577819824218736" y="-117.98119354248047"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -892,7 +892,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -919,7 +919,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="-4.57781982421875" y="-37.21856689453125"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1041,7 +1041,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1203,7 +1203,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1230,7 +1230,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="171.07183837890625" y="-103.00960159301758"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1499,7 +1499,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1526,7 +1526,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="305.97962951660156" y="-148.91189575195312"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1648,7 +1648,7 @@
               </properties>
               <graphics>
                 <location position="top"/>
-                <label visible="1" font="Arial,11" color="255,255,255,255"/>
+                <label visible="1" font="Arial,10" color="255,255,255,255"/>
                 <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
                 <background color="183,15,19,255"/>
               </graphics>
@@ -1822,7 +1822,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="404.1267547607422" y="18.22246551513672"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -2986,7 +2986,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-284.406982421875" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -3346,7 +3346,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-167.31106567382812" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -3432,7 +3432,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-109.76733398437499" y="-109.69894409179688"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -3518,7 +3518,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-35.877807617187514" y="-149.7093963623047"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -3662,7 +3662,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-28.76733398437503" y="-103.88059997558592"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4022,7 +4022,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-167.3110656738281" y="43.58019256591797"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4108,7 +4108,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-109.767333984375" y="-16.734436035156246"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4194,7 +4194,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-82.767333984375" y="-3.4204406738281232"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4280,7 +4280,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-22.08132934570314" y="9.580192565917995"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4590,7 +4590,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-193.7318572998047" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4758,7 +4758,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="100.88658142089844" y="42.60699462890625"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
