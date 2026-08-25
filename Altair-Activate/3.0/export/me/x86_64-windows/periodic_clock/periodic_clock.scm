@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="periodic_clock">
-  <header formatversion="2" hwxversion="2026.1" script="oml"/>
+  <header formatversion="2" hwxversion="2612.0" script="oml"/>
   <edition>
     <properties>
       <property name="creator" value="masoud"/>
       <property name="creationdate" value="06/28/20 10:11:17"/>
       <property name="revision" value="0"/>
-      <property name="lastmodifieddate" value="08/11/26 16:11:58"/>
+      <property name="lastmodifieddate" value="08/25/26 08:21:11"/>
       <property name="comments" value=""/>
     </properties>
   </edition>
@@ -611,7 +611,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="-4.577819824218736" y="-117.98119354248047"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -823,7 +823,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="-4.57781982421875" y="-37.21856689453125"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1134,7 +1134,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="171.07183837890625" y="-103.00960159301758"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1382,7 +1382,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="305.97962951660156" y="-148.91189575195312"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -2141,7 +2141,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="428.34906005859375" y="-9.614723205566406"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -2227,7 +2227,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="437.86962890625006" y="20.385276794433594"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -2313,7 +2313,7 @@
             <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
             <background color="64,64,64,255"/>
             <position x="-85.76023864746094" y="-37.21856689453125"/>
-            <size width="0" height="0"/>
+            <size width="1" height="1"/>
             <rotate angle="0"/>
             <texts>
               <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -2776,7 +2776,7 @@
         <label position="bottom" visible="1" font="Arial,11" color="255,255,255,255"/>
         <frame shape="rectangle" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="255,255,255,255"/>
-        <position x="195.345085144043" y="-81.5"/>
+        <position x="211.04002441504065" y="-81.5"/>
         <size width="40" height="40"/>
         <rotate angle="0"/>
         <texts>
@@ -3553,7 +3553,7 @@
             <rows number="nin">
               <row>
                 <value>&apos;input&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
                 <value>[1,1,1]</value>
               </row>
@@ -3569,17 +3569,17 @@
             <rows number="nout">
               <row>
                 <value>&apos;out1&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
               <row>
                 <value>&apos;out2&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
               <row>
                 <value>&apos;out3&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
             </rows>
@@ -3674,7 +3674,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-167.31106567382812" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -3875,7 +3875,7 @@
             <rows number="nin">
               <row>
                 <value>&apos;input&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
                 <value>[1,1,1]</value>
               </row>
@@ -3891,17 +3891,17 @@
             <rows number="nout">
               <row>
                 <value>&apos;out1&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
               <row>
                 <value>&apos;out2&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
               <row>
                 <value>&apos;out3&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
             </rows>
@@ -3996,7 +3996,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-167.3110656738281" y="43.58019256591797"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4224,7 +4224,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-174.81039428710938" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4624,7 +4624,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="-128.46800231933594" y="-61.5"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4710,7 +4710,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="85.55070114135745" y="62.54447937011719"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4796,7 +4796,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="35.742729187011726" y="27.580192565917997"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -4882,7 +4882,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="87.54730987548828" y="43.580192565918"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
