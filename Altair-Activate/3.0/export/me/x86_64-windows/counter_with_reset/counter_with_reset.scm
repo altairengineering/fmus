@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model name="counter_with_reset">
-  <header formatversion="2" hwxversion="2023.1" script="oml"/>
+  <header formatversion="2" hwxversion="2612.0" script="oml"/>
   <edition>
     <properties>
       <property name="creator" value="masoud"/>
       <property name="creationdate" value="12/14/23 09:22:34"/>
       <property name="revision" value="0"/>
-      <property name="lastmodifieddate" value="12/18/23 13:23:46"/>
+      <property name="lastmodifieddate" value="08/25/26 11:04:00"/>
       <property name="comments" value=""/>
     </properties>
   </edition>
@@ -14,7 +14,7 @@
   <finalization/>
   <diagram>
     <block name="Scope" type="block">
-      <template name="system/SignalViewers/Scope"/>
+      <template name="system/SignalViewers/Scope" libname="Activate"/>
       <properties>
         <property name="masked" value="1"/>
         <property name="inlinable" value="0"/>
@@ -41,7 +41,7 @@
         </flip>
       </graphics>
       <ports>
-        <port name="&quot;&quot; &quot;&quot;" type="variableport">
+        <port name="&quot;&quot; &quot;&quot; &quot;&quot;" type="variableport">
           <properties>
             <property name="iotype" value="in"/>
             <property name="datatype" value="explicit"/>
@@ -70,7 +70,7 @@
       </ports>
       <parameters>
         <section name="Main">
-          <parameter name="nin" value="2"/>
+          <parameter name="nin" value="3"/>
           <parameter name="externalActivation" value="0"/>
           <parameter name="winSize" value="[400,400]"/>
           <parameter name="winPos" value="[300,300]"/>
@@ -80,7 +80,7 @@
           <parameter name="option" value="&apos;Reuse&apos;"/>
         </section>
         <section name="Advanced">
-          <parameter name="useSubplot" value="1"/>
+          <parameter name="useSubplot" value="0"/>
           <parametertable name="win_s">
             <columns number="7">
               <parameter name="title" value="&apos;&apos;"/>
@@ -92,6 +92,15 @@
               <parameter name="yInterval" value="[NaN,NaN]"/>
             </columns>
             <rows number="nin">
+              <row>
+                <value>&apos;&apos;</value>
+                <value>0</value>
+                <value>&apos;Coarse&apos;</value>
+                <value>&apos;linear&apos;</value>
+                <value>-1</value>
+                <value>&apos;linear&apos;</value>
+                <value>[NaN,NaN]</value>
+              </row>
               <row>
                 <value>&apos;&apos;</value>
                 <value>0</value>
@@ -136,13 +145,19 @@
                 <value>0</value>
                 <value>0</value>
               </row>
+              <row>
+                <value>&apos;&apos;</value>
+                <value>0</value>
+                <value>0</value>
+              </row>
             </rows>
           </parametertable>
+          <parameter name="styleCode" value="[&apos;axesHandles = flip(get(_figureHandle, &apos;&apos;children&apos;&apos;));&apos;,char(10),&apos;if length(axesHandles) &gt;= 1&apos;,char(10),&apos;  axes_1 = axesHandles(1);&apos;,char(10),&apos;  try&apos;,char(10),&apos;    legendHandle = get(axes_1,&apos;&apos;legend&apos;&apos;);&apos;,char(10),&apos;    set(legendHandle, &apos;&apos;location&apos;&apos;, &apos;&apos;northoutside&apos;&apos;);&apos;,char(10),&apos;  catch err&apos;,char(10),&apos;    err&apos;,char(10),&apos;  end&apos;,char(10),&apos;end&apos;]"/>
         </section>
       </parameters>
     </block>
     <block name="FMU" type="block">
-      <template name="system/CoSimulation/FMU"/>
+      <template name="system/CoSimulation/FMU" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -195,7 +210,7 @@
             <background color="64,64,64,255"/>
           </graphics>
         </port>
-        <port name="&quot;ExternalClock1&quot;" type="variableport">
+        <port name="&quot;TriggeredClock1&quot;" type="variableport">
           <properties>
             <property name="iotype" value="in"/>
             <property name="datatype" value="Activation"/>
@@ -245,7 +260,7 @@
             </columns>
             <rows number="nclocks">
               <row>
-                <value>&apos;ExternalClock1&apos;</value>
+                <value>&apos;TriggeredClock1&apos;</value>
                 <value>&apos;External triggered input clock: 1, nevprt=1&apos;</value>
                 <value>&apos;input&apos;</value>
                 <value>&apos;triggered&apos;</value>
@@ -291,7 +306,7 @@
             <rows number="nout">
               <row>
                 <value>&apos;Output&apos;</value>
-                <value>&apos;, Dims: 1&apos;</value>
+                <value>&apos;, Dims: []&apos;</value>
                 <value>&apos;Float64&apos;</value>
               </row>
             </rows>
@@ -365,12 +380,12 @@
       </parameters>
     </block>
     <block name="ToCSV" type="block">
-      <template name="system/SignalExporters/ToCSV"/>
+      <template name="system/SignalExporters/ToCSV" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
         <property name="atomic" value="0"/>
-        <property name="status" value="1"/>
+        <property name="status" value="0"/>
       </properties>
       <graphics>
         <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
@@ -447,7 +462,7 @@
       </parameters>
     </block>
     <block name="Periodic clock_1" type="block">
-      <template name="system/ActivationOperations/SampleClock"/>
+      <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -499,7 +514,7 @@
     <block name="counter_with_reset" type="block">
       <diagram>
         <block name="Counter" type="block">
-          <template name="{dd99f4d4-aa8d-4df6-a125-cf35c16235f4}/Counter"/>
+          <template name="{dd99f4d4-aa8d-4df6-a125-cf35c16235f4}/Counter" libname="StateMachine"/>
           <properties>
             <property name="masked" value="1"/>
             <property name="inlinable" value="1"/>
@@ -586,7 +601,7 @@
           </parameters>
         </block>
         <block name="Reset" type="activation_in_port">
-          <template name="system/Ports/EventInput"/>
+          <template name="system/Ports/EventInput" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -634,7 +649,7 @@
           </parameters>
         </block>
         <block name="Output" type="regular_out_port">
-          <template name="system/Ports/Output"/>
+          <template name="system/Ports/Output" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -684,7 +699,7 @@
           </parameters>
         </block>
         <block name="Periodic clock" type="block">
-          <template name="system/ActivationOperations/SampleClock"/>
+          <template name="system/ActivationOperations/SampleClock" libname="Activate"/>
           <properties>
             <property name="inlinable" value="0"/>
             <property name="masked" value="1"/>
@@ -825,7 +840,7 @@
       </parameters>
     </block>
     <block name="ActivationSplit" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -837,7 +852,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-51.64141845703125" y="-114.80912780761716"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -911,7 +926,7 @@
       </parameters>
     </block>
     <block name="EventUnion" type="block">
-      <template name="system/ActivationOperations/EventUnion"/>
+      <template name="system/ActivationOperations/EventUnion" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -972,7 +987,7 @@
       </parameters>
     </block>
     <block name="Block_1" type="activation_split">
-      <template name="system/Links/ActivationSplit"/>
+      <template name="system/Links/ActivationSplit" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -984,7 +999,7 @@
         <frame shape="ellipse" visible="1" color="183,15,19,255" thickness="1.5"/>
         <background color="183,15,19,255"/>
         <position x="-173.3298454284668" y="26.19087791442865"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1058,7 +1073,7 @@
       </parameters>
     </block>
     <block name="Split" type="regular_split">
-      <template name="system/Links/Split"/>
+      <template name="system/Links/Split" libname="Activate"/>
       <properties>
         <property name="inlinable" value="0"/>
         <property name="masked" value="1"/>
@@ -1070,7 +1085,7 @@
         <frame shape="ellipse" visible="1" color="0,0,0,255" thickness="1.5"/>
         <background color="64,64,64,255"/>
         <position x="27.35857391357422" y="100.36844825744629"/>
-        <size width="0" height="0"/>
+        <size width="1" height="1"/>
         <rotate angle="0"/>
         <texts>
           <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center"/>
@@ -1143,6 +1158,103 @@
         </section>
       </parameters>
     </block>
+    <block name="FromCSV" type="block">
+      <template name="system/SignalImporters/FromCSV" libname="Activate"/>
+      <properties>
+        <property name="inlinable" value="0"/>
+        <property name="masked" value="1"/>
+        <property name="atomic" value="0"/>
+        <property name="status" value="1"/>
+      </properties>
+      <graphics>
+        <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+        <frame shape="rectangle" visible="1" color="0,0,0,255" thickness="1.5"/>
+        <background color="255,255,255,255"/>
+        <position x="-232.41459396077983" y="177.88813123999176"/>
+        <size width="220" height="60"/>
+        <rotate angle="0"/>
+        <texts>
+          <text name="text1" color="0,0,0,255" clip="1" x="0.5" y="0.5" rotate="1" visible="1" font="Arial,12" align="center">counter_with_reset.csv</text>
+        </texts>
+        <images>
+          <image name="image1" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+        </images>
+        <flip value="0">
+          <images>
+            <image name="image2" file="" visible="1" alpha="255" aspectratio="1" x="0" y="0" width="1" height="1" clip="1" rotate="1"/>
+          </images>
+        </flip>
+      </graphics>
+      <ports>
+        <port name="&quot;Output&quot;" type="variableport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Explicit"/>
+            <property name="portnumber" value="nout"/>
+          </properties>
+          <graphics>
+            <location position="right"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="64,64,64,255" thickness="1.5"/>
+            <background color="64,64,64,255"/>
+          </graphics>
+        </port>
+        <port name="" type="variableport">
+          <properties>
+            <property name="iotype" value="in"/>
+            <property name="datatype" value="Activation"/>
+            <property name="portnumber" value="externalActivation"/>
+          </properties>
+          <graphics>
+            <location position="top"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
+            <background color="183,15,19,255"/>
+          </graphics>
+        </port>
+        <port name="" type="variableport">
+          <properties>
+            <property name="iotype" value="out"/>
+            <property name="datatype" value="Activation"/>
+            <property name="portnumber" value="outevent"/>
+          </properties>
+          <graphics>
+            <location position="bottom"/>
+            <label visible="1" font="Arial,11" color="255,255,255,255"/>
+            <frame shape="triangle" visible="1" color="183,15,19,255" thickness="1.5"/>
+            <background color="183,15,19,255"/>
+          </graphics>
+        </port>
+      </ports>
+      <parameters>
+        <section name="Parameters">
+          <parameter name="fname" value="&apos;./counter_with_reset.csv&apos;"/>
+          <parameter name="independent" value="&apos;time&apos;"/>
+          <parameter name="nout" value="1"/>
+          <parametertable name="outports">
+            <columns number="2">
+              <parameter name="varname" value="&apos;A&apos;"/>
+              <parameter name="vardatatype" value="&apos;double&apos;"/>
+            </columns>
+            <rows number="nout">
+              <row>
+                <value>&apos;Output&apos;</value>
+                <value>&apos;double&apos;</value>
+              </row>
+            </rows>
+          </parametertable>
+          <parameter name="outevent" value="0"/>
+          <parameter name="externalActivation" value="0"/>
+        </section>
+        <section name="Advanced">
+          <parameter name="Method" value="&apos;Linear&apos;"/>
+          <parameter name="Leftside" value="&apos;Zero&apos;"/>
+          <parameter name="Rightside" value="&apos;Hold&apos;"/>
+          <parameter name="Offset" value="2"/>
+          <parameter name="Separator" value="&apos;&apos;"/>
+        </section>
+      </parameters>
+    </block>
     <link name="" type="Activation">
       <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
       <from block="Periodic clock_1" port="1" iotype="out"/>
@@ -1159,7 +1271,7 @@
       <pen shape="line" color="64,64,64,255" thickness="1.5"/>
       <points>
         <point x="55.35857391357422" y="-52.809120178222656"/>
-        <point x="55.35857391357422" y="-52.308284759521484"/>
+        <point x="55.35857391357422" y="-55.64161809285482"/>
       </points>
     </link>
     <link name="" type="Explicit">
@@ -1231,7 +1343,7 @@
       <pen shape="line" color="64,64,64,255" thickness="1.5"/>
       <points>
         <point x="63.07529640197754" y="100.36844825744629"/>
-        <point x="63.07529640197754" y="-32.308284759521484"/>
+        <point x="63.07529640197754" y="-42.308284759521484"/>
       </points>
     </link>
     <link name="" type="Activation">
@@ -1242,6 +1354,17 @@
       <points>
         <point x="3.014364242553725" y="152.36844825744626"/>
         <point x="3.0143642425536967" y="38.19087982177737"/>
+      </points>
+    </link>
+    <link name="" type="Explicit">
+      <label position="bottom" visible="0" font="Arial,11" color="255,255,255,255"/>
+      <from block="FromCSV" port="1" iotype="out"/>
+      <to block="Scope" port="3" iotype="in"/>
+      <pen shape="line" color="64,64,64,255" thickness="1.5"/>
+      <points>
+        <point x="-2.4145939607798255" y="210.46781684449"/>
+        <point x="67.03292213582102" y="210.46781684448996"/>
+        <point x="67.03292213582102" y="-28.974951426188156"/>
       </points>
     </link>
     <context/>
